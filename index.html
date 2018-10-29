@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		
+		<script src="js/flexible.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		
+		
+		<title></title>
+	</head>
+	<style type="text/css">
+		.active{
+			display: none;
+		}
+	</style>
+	<body>
+		<!---------开始-------->
+		<div class="main" >
+			<div class="top">
+				
+			</div>
+			<div class="body">
+				<div class="title_1">
+					新的一天即将开始！
+				</div>	
+				
+				<div class="title_2">
+				  <p>楼迴迷云日,</p>
+                  <p>溪深涨晓沙.</p>
+                  <p>楼上一天春思,</p>
+                  <p>浩无涯.</p>	
+				</div>
+				
+			</div>
+			
+			
+			
+			<div class="begin">
+				进入游戏
+			</div>
+						
+		</div>
+		
+	<!--------------------题目--------------------------->
+		<div class="main1 active">
+			
+			<div class="banner">
+				拂晓后的第一缕阳光，总带着些盎然，悄悄透过纱帘，抚摸着脸。虽暖暖，却仍挥不去
+			</div>
+			
+			<div class="time">
+				时间8:00:00
+			</div>
+			
+			<div class="choose a">
+				
+				睡个回笼觉
+				
+			</div>
+			<div class="choose b">
+				
+				   和心爱的人说早安
+				
+			</div>
+			<div class="choose c">
+			    
+			    	喝杯水
+			    
+			</div>
+			<div class="choose d">
+				
+					给自己做早餐
+				
+			</div>
+			<div class="top">
+			<div class="before">
+				
+			</div>
+			<div class="time1">
+				时间:8:00
+			</div>
+			</div>
+		</div>
+				
+	<!------------------------题目结束--------------------->	
+	
+	
+	
+	<!-------------------计时开始--------------------->	
+	<div class="main2 active">
+			
+  			 <div id="show"></div>
+  			 
+  			 <div class="time">
+  			 	24:00:00
+  			 </div>
+  			 
+  			 <div class="ul">
+  			 	<div class="li">
+  			 		1......
+ 					<div class="p">+30</div>
+  			 	</div>
+  			 	<div class="li">
+  			 		2......
+  			 		<div class="p">+30</div>
+  			 	</div>
+  			 	<div class="li">
+  			 		3......
+  			 		<div class="p">+30</div>
+  			 	</div>
+  			 	<div class="li">
+  			 		4......
+  			 		<div class="p">+20</div>
+  			 	</div>
+  			 	<div class="li">
+  			 		5......
+  			 		<div class="p">+10</div>
+  			 	</div>
+  			 </div>
+  			 
+			
+			<div class="btn" style="display: none;">
+				查看测试结果				
+			</div>			
+		</div>
+	<!-------------------计时结束--------------------->
+	
+	<!--end-->
+		<div class="main3 active">
+			<div class="title">
+				结果评价			
+			</div>
+			<div class="banner">
+				<div class="a">
+					
+				</div>
+				<div class="b">
+					
+				</div>
+			</div>
+			
+			<div class="judge">
+				
+			</div>
+			<div class="send">
+				利用好碎片化时间能给你带来意想不到的财富。
+			</div>
+			
+			<div class="share">
+				分享
+			</div>
+			<div class="download">
+				下载游戏
+			</div>
+			
+			<div class="game">
+			《共享庄园》是一款基于区块链技术的经营农场类游戏。游戏中，可进行自由购买土地卷成为农场主，也可做一个农民去地主农场浇水。游戏中除以上玩法外，还添加了大乐透，拍卖场等多种获取收益的渠道，期待你的加入。
+			</div>
+		</div>
+		
+		<!--end-->
+		
+		<!--share_success-->
+		<div class="share_success active">
+			<div class="title">
+				分享成功
+			</div>
+			
+			<div class="btn1">
+				确定
+			</div>
+			
+			<div class="btn2">
+				下载游戏
+			</div>
+		</div>
+		
+		
+		<!--end-->
+		
+		
+		
+		<!--isdownload-->
+		
+		<div class="isdownload active">
+			<div class="title">
+				下载游戏中
+			</div>
+			
+			<div class="btn1">
+				确定
+			</div>
+			
+			
+		</div>
+		
+		
+		<!--....-->
+		
+	</body>
+	<script type="text/javascript">
+		var bgMusic = new Audio;
+		bgMusic.src = "小野リサ - DERNIERE VALSE.mp3";
+		bgMusic.loop = true;
+		bgMusic.play();
+		
+		$(".share_success .btn1").click(function(){
+			window.location.reload();
+		})
+		
+		$(".share_success .btn2").click(function(){
+			$(".share_success").addClass("active");
+			$(".isdownload").removeClass("active");
+		})
+		
+		$(".isdownload .btn1").click(function(){
+			window.location.reload();
+		})
+		
+		$(".main3 .share").click(function(){
+			$(".main3").addClass("active");
+			$(".share_success").removeClass("active");
+		})
+		
+		$(".main3 .download").click(function(){
+			$(".main3").addClass("active");
+			$(".isdownload").removeClass("active");
+		})
+		
+		$(".main .begin").click(function(){
+			$(".main").addClass("active");
+			$(".main1").removeClass("active");
+			setTimeout(function(){
+				$(".main1 .top").css("display","none");
+				},1000);
+		});
+		
+		
+		
+		$(".main1 .choose").on("touchstart",function(){
+			$(this).attr("id","mouseover");
+		});
+		$(".main1 .choose").on("touchend",function(){
+			$(this).attr("id","");
+		});
+		
+		
+$(".main2 .btn").click(function(){
+			$(".main2").addClass("active");
+			$(".main3").removeClass("active");
+			console.log("the end")
+	var json = [
+	{
+		"word":"先知",
+		"te":"思想",
+		"judge":"在利落中有许多难以分割的层次，对时尚有着敏锐的感受力，能够永久维持着年轻和时髦的外貌，对推销很有天赋，虽然开拓能力欠缺，但直觉敏锐，如果能充分利用这一点踏踏实实地开展事业，将在30岁之后成就一番事业。"
+	},
+	{
+		"word":"贵族",
+		"te":"财富",
+		"judge":"传统而不保守，情绪是头号敌人，美食主义，具有商业头脑和牢靠的价值观，缺乏果敢和冒险精神，可能会因此而错过许多良机，处世时应切记这一点"
+	},
+	{
+		"word":"恋人",
+		"te":"渴望",
+		"judge":"爱恨分明，自尊心强，沉默中具有攻击力，对决定的事有执行力、对朋友讲义气、天生的性感魅力、善于保守秘密、心思细腻、常有狂妄的梦想，你具有捕捉千载难逢的机遇和看穿对手弱点的敏锐的洞察力，所以在法律、招标、销售等领域能将才能发挥得淋漓尽致。"
+	},
+	{
+		"word":"行者",
+		"te":"节制",
+		"judge":"深爱自由，不吃回头草，乐观乃天性，爆发型的浪漫，如果利用充满活力和具有开拓精神的优势投身于竞争、谈判、角逐胜负一类的充满变数的职业当中，会获得成功。"
+	},
+	{
+		"word":"诗人",
+		"te":"自由",
+		"judge":"喜欢特立独行，丰富的幽默感，有处理紧急事务的才能，崇尚正义感，擅长哲学思考，你具有出色的判断力和勇敢的开拓精神，时常有出众的创意，在风险事业或尖端领域中能够崭露头角。一定要坚守信用和信义，因为这才是你最珍贵的财产和成功的钥匙。"
+	}
+]
+		var one = parseInt($.cookie("1"));
+		var two = parseInt($.cookie("2"));
+		var three = parseInt($.cookie("3"));
+		var four = parseInt($.cookie("4"));
+		var five = parseInt($.cookie("5"));
+		var point = one+two+three+four+five;
+		
+		if(point>=10&&point<=12){
+			
+			$(".main3 .a").html(json[0].word);
+			$(".main3 .b").html(json[0].te);
+			$(".main3 .judge").html(json[0].judge);
+			console.log(point);
+			console.log(json[0].word)
+			
+		}else if(point>=13&&point<=15){
+			
+			$(".main3 .a").html(json[1].word);
+			$(".main3 .b").html(json[1].te);
+			$(".main3 .judge").html(json[1].judge);
+			console.log(point);
+			console.log(json[1].word)
+			
+		}else if(point>=16&&point<=18){
+			
+			$(".main3 .a").html(json[2].word);
+			$(".main3 .b").html(json[2].te);
+			$(".main3 .judge").html(json[2].judge);
+			console.log(point);
+			console.log(json[2].word)
+			
+		}else if(point>=19&&point<=21){
+			
+			$(".main3 .a").html(json[3].word);
+			$(".main3 .b").html(json[3].te);
+			$(".main3 .judge").html(json[3].judge);
+			console.log(point);
+			console.log(json[3].word)
+			
+		}else if(point>=22&&point<=25){
+			
+			$(".main3 .a").html(json[4].word);
+			$(".main3 .b").html(json[4].te);
+			$(".main3 .judge").html(json[4].judge);
+			console.log(point);
+			console.log(json[4].word)
+			
+		}else{
+			alert("error");
+		}
+	
+		})
+		
+		
+		
+		
+		
+	</script>
+</html>

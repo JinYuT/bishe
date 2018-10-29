@@ -1,0 +1,426 @@
+body,html{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	
+}
+
+div{
+	box-sizing: border-box;
+}
+
+/********游戏开始*********/
+.main{
+	width: 100%;
+	height: 100%;
+	background: url(../img/开头.png) no-repeat 0 0;	
+
+}
+
+.body{
+	padding-top: 10px;
+	width: 100%;
+	height: 6rem;
+	background-color: rgba(255,255,204,0.8);
+	border-radius: 8px;
+}
+
+.top{
+	height: 4.5rem;
+	width: 100%;
+}
+
+.title_1{
+	line-height: 1.5rem;
+	text-align: center;
+	height:1.5rem;
+	font-size: .6rem;
+	font-weight: 900;
+}
+.title_2{
+	margin: 0 auto;
+	width: 80%;
+	height: 3.2rem;
+	background-color: rgba(255,255,204,1);
+	
+	
+}
+.title_2 p{
+	margin: 0;
+	font-size:.5rem;
+	color: black;
+	text-align: center;
+}
+
+.begin{
+	font-size: .5rem;
+	color: white;
+	border-radius: 5px;
+	margin: 0 auto;
+	width: 3rem;
+	height: 1.2rem;
+	text-align: center;
+	line-height: 1.2rem;
+	background: blue;
+	margin-top: 3rem;
+}
+
+
+/*************题目**************/
+
+.main1{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: url(../img/早上.jpg) no-repeat 0 0;
+	background-size: 100% 100%;
+	padding-top: 15px;
+	
+}
+
+.main1 .banner{
+	font-size: .4rem;
+	background: rgba(255,255,204,0.8);
+	width: 90%;
+	height: auto;
+	margin:0 auto;
+	text-align: center;
+	border-radius: 15px;
+}
+
+.main1 .time{
+    font-size: .4rem;
+	font-weight: bold;
+	height: 1rem;
+	background: white;
+	text-align: center;
+	line-height: 1rem;
+	width: 3rem;
+	margin: 5px 0 0 25px;
+}
+.main1 .top{
+	z-index: 999;
+	position: absolute;
+	/*display: none;*/
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,.5);
+	/*opacity: 0.8;*/
+	top:0;
+	left: 0;
+}
+.main1 .before{
+	width: 100%;
+	height: 6rem;
+}
+
+.main1 .choose{
+	font-size: .4rem;
+	position: absolute;
+	padding:10px;
+	color: rgba(0,0,0,0.6);
+	background: rgba(255,255,255,0.5);
+	float: left;
+	border: 1px #000 solid;
+	height: 2rem;
+	width: 2.5rem;
+	text-align: center;
+}
+
+.main1 #mouseover{
+	color: rgba(0,0,0,1);
+	background:rgba(255,255,255,1) ;
+}
+.main1 .a{
+	top: 55%;
+	left:20%;
+}
+.main1 .b{
+	top: 55%;
+	right: 20%;
+}
+.main1 .c{
+	top: 70%;
+	left: 20%;
+}
+.main1 .d{
+	top: 70%;
+	right: 20%;
+}
+.main1 .top .time1{
+	font-weight: bold;
+	margin: 0 auto;
+	font-size: .8rem;
+	background:rgba(255,255,255,1);
+	height: 1.8rem;
+	width: 6rem;
+	text-align: center;
+	line-height: 1.8rem;	
+}
+/***********题目样式结束***********/
+
+
+/**********计时样式开始************/
+.main2{
+	width: 100%;
+	height: 100%;
+	background: url(../img/倒计时.png) no-repeat 0 0;
+	background-size: 100% 100%;
+}
+
+.main2 #show{
+	position: relative;
+	top: .3rem;
+	border-radius: 10px;
+	background: #fff;
+	font-size: .8rem;
+	font-weight: bolder;
+	text-align: center;
+	width: 90%;
+	height: 1.5rem;
+	margin: 0 auto;
+	line-height: 1.5rem;
+}
+
+.main2 .time{
+	position: relative;
+	top: 1rem;
+	border-radius: 10px;
+	background: #fff;
+	font-size: .8rem;
+	font-weight: bolder;
+	text-align: center;
+	width: 75%;
+	height: 1.5rem;
+	margin: 0 auto;
+	line-height: 1.5rem;
+}
+.main2 .btn{
+	
+	position: relative;
+	bottom: -2rem;
+	margin: 0 auto;
+	font-size: .4rem;
+	line-height: 1.2rem;
+	text-align: center;
+	background: rgba(22, 155, 213, 1);
+	width: 4rem;
+	height: 1.2rem;
+	color: white;
+	border-radius: 8px;
+}
+
+.main2 .ul{
+	margin-top: 3rem;
+	height: auto;
+	width: 100%;
+	
+}
+
+.main2 .li{
+	display: none;
+	font-weight: bolder;
+	padding: 0 5px;
+	margin: 10px auto;
+	border-radius: 10px;
+	font-size: .6rem;
+	line-height: 1.2rem;
+	height: 1.2rem;
+	width: 90%;
+	background:rgba(153,255,153,0.8);
+}
+
+.main2 .p{
+	display: none;
+	float: right;
+}
+
+/**********计时样式结束************/
+
+/*end*/
+.main3{
+	padding-left: 3px;
+	padding-right: 3px;
+	height: 100%;
+	width: 100%;
+	background:url(../img/结果.jpg) no-repeat;
+	background-size: 100% 100%;
+	padding-top: 10px;
+}
+
+.main3 .title{
+	font-weight: bolder;
+	background: rgba(255,255,204,1);
+	width: 100%;
+	height: 1.6rem;
+	border-radius: 10px;
+	font-size: .6rem;
+	text-align: center;
+	line-height: 1.6rem;
+}
+.main3 .banner{
+	margin-top: 10px;
+	width: 100%;
+	height: 1.5rem;
+	display: flex;
+	justify-content: space-around;
+}
+.main3 .banner .a,.main3 .banner .b{
+	font-weight: bolder;
+	height: 100%;
+	width:3rem;
+	border-radius: 8px;
+	font-size: .5rem;
+	text-align: center;
+	line-height: 1.5rem;
+}
+.main3 .banner .a {
+	background: greenyellow;
+}
+.main3 .banner .b{
+	background: deepskyblue;
+}
+
+
+.main3 .judge{
+	font-size: .35rem;
+	background: rgba(255,255,204,0.8);
+	width: 80%;
+	margin:10px auto;
+	border: 1px #000 solid;
+	border-radius: 8px;
+	height:auto;
+}
+
+.main3 .send{
+	font-size: .35rem;
+	padding: 5px;
+	background: rgba(255,255,204,0.8);
+	width: 90%;
+	margin:20px auto;
+	border: 1px #000 solid;
+	border-radius: 8px;
+	height:auto;
+}
+
+.main3 .share ,.main3 .download{
+	font-size: .4rem;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+	line-height: 1.3rem;
+	width: 3.5rem;
+	height: 1.3rem;
+	background: rgba(22, 155, 213, 1);
+	border: 3px solid;
+    border-radius: 8px;
+	border-color: rgba(121, 121, 121, 1);
+}
+.main3 .share{
+	margin-top: 3rem;
+}
+.main3 .download{
+	margin-top: 1rem;
+}
+
+.main3 .game{
+	margin: 0 3px;
+	background: rgba(255,255,204,0.8);
+	font-size: 0.35rem;
+	position: absolute;
+	bottom:5px;
+	border-radius: 6px;
+	border: none;
+}
+/*
+ * 
+ * end*/
+
+
+
+.share_success{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url(../img/备用.png) no-repeat 0 0;
+	background-size: 100% 100%;
+
+}
+
+.share_success .title{
+	top: 5rem;
+	position: relative;
+	margin: 0 auto;
+	line-height: 1.6rem;
+	background: rgba(255,255,204,1);
+	width: 4rem;
+	height: 1.6rem;
+	text-align: center;
+	font-size: .8rem;
+	font-weight: bolder;
+}
+
+.share_success .btn1,.share_success .btn2{
+	position: absolute;
+	font-size: .4rem;
+	border-radius: 8px;
+	height: 1.3rem;
+	width: 3.2rem;
+	background: rgba(22,155,213,1);
+	line-height: 1.3rem;
+	color: white;
+	text-align: center;
+	bottom: 3rem;
+	
+}
+
+.share_success .btn1{
+	left: 1rem;
+}
+.share_success .btn2{
+	right: 1rem;
+}
+
+
+
+.isdownload{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url(../img/备用.png) no-repeat 0 0;
+	background-size: 100% 100%;
+
+}
+
+.isdownload .title{
+	top: 5rem;
+	position: relative;
+	margin: 0 auto;
+	line-height: 1.4rem;
+	background: rgba(255,255,204,1);
+	width: 4.5rem;
+	height: 1.4rem;
+	text-align: center;
+	font-size: .8rem;
+	font-weight: bolder;
+}
+
+.isdownload .btn1{
+	top: 11rem;
+	position: relative;
+	margin: 0 auto;
+	font-size: .4rem;
+	border-radius: 8px;
+	height: 1.3rem;
+	width: 3.2rem;
+	background: rgba(22,155,213,1);
+	line-height: 1.3rem;
+	color: white;
+	text-align: center;
+	
+	
+	
+}
+
+
